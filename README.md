@@ -7,6 +7,8 @@
 ## Passos
 
 ### 1. Criar Projeto
+* mkdir aprenda-quarkus
+* cd aprenda-quarkus
 * mvn io.quarkus:quarkus-maven-plugin:0.21.2:create -DprojectGroupId=com.github.viniciusferraz -DprojectArtifactId=aprenda-quarkus -DclassName="com.github.viniciusferraz.HelloResource" -Dpath="/hello"
 
 Este comando irá gerar:
@@ -23,7 +25,6 @@ Este comando irá gerar:
 
 the application configuration file
 ### 2. Subir aplicação
-* cd aprenda-quarkus
 * ./mvnw compile quarkus:dev
 
 ### 3. Acessar aplicação
