@@ -11,7 +11,7 @@
 * mkdir aprenda-quarkus
 * cd aprenda-quarkus
 * mvn io.quarkus:quarkus-maven-plugin:0.21.2:create -DprojectGroupId=com.github.viniciusferraz -DprojectArtifactId=aprenda-quarkus -DclassName="com.github.viniciusferraz.HelloResource" -Dpath="/hello"
-* Ou fazer clone do meu projeto: git clone --branch v0.0.1 
+* Ou fazer clone do meu projeto: git clone --branch v0.0.1 https://github.com/viniciusfcf/quarkus.git
 
 Este comando irá gerar:
 
