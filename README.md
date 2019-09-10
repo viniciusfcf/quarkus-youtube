@@ -4,20 +4,22 @@
 * Uma IDE (Eclipse, IntelliJ)
 * Apache Maven 3.5.3+
 * Docker (caso queira criar e executar uma imagem da aplicação)
-* GraalVM (caso queira criar um executável Linux)
+* GraalVM (caso queira gerar o executável nativo para Linux)
+
 ## Passos
 
-### 1. Criar Projeto
-* mkdir aprenda-quarkus
-* cd aprenda-quarkus
-* mvn io.quarkus:quarkus-maven-plugin:0.21.2:create -DprojectGroupId=com.github.viniciusferraz -DprojectArtifactId=aprenda-quarkus -DclassName="com.github.viniciusferraz.HelloResource" -Dpath="/hello"
-* Ou fazer clone do meu projeto: git clone --branch v0.0.1 https://github.com/viniciusfcf/quarkus.git
+### 1. Como Criar Projeto
 
-Este comando irá gerar:
+
+* [Baixar fonte](https://github.com/viniciusfcf/quarkus/archive/v0.0.1.zip)
+
+* Clonar do projeto do meu GIT: **git clone --branch v0.0.1 https://github.com/viniciusfcf/quarkus.git**
+
+O projeto irá conter:
 
 1. Projeto seguindo estrutura maven
 
-2. O recurso com.github.viniciusferraz.HelloResource disponível no contexto /hello
+2. O recurso com.github.viniciusfcf.hello.HelloResource disponível no contexto /hello e /hello/quarkus
 
 3. Um teste de unidade para HelloResource utilizando REST Assured 
 
@@ -25,14 +27,20 @@ Este comando irá gerar:
 
 5. Arquivos Dockerfile para criação de imagens em modo nativo e JVM
 
-the application configuration file
+6. Arquivo application.properties para configuração das extensões
+
 ### 2. Subir aplicação com Hot Reloading
 * ./mvnw compile quarkus:dev
 
 ### 3. Acessar aplicação
 * http://localhost:8080
 * http://localhost:8080/hello
+* http://localhost:8080/hello/quarkus
 
-### 4. Link da apresentação
+### 4. Apresentação
 
-https://docs.google.com/presentation/d/1S8oylcN4Hpcj0m6Zavkes9Q6SO4zfy_IMB4g0DMQuuI/edit?usp=sharing
+[Baixe aqui](https://docs.google.com/presentation/d/1S8oylcN4Hpcj0m6Zavkes9Q6SO4zfy_IMB4g0DMQuuI/edit?usp=sharing)
+
+### 5. Vídeo do Youtube
+
+https://youtu.be/pBc0qSLaHO8
