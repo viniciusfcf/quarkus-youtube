@@ -17,16 +17,11 @@
 
 O projeto irá conter:
 
-1. Projeto seguindo estrutura maven
-
+1. Estrutura maven
 2. O recurso com.github.viniciusfcf.hello.HelloResource disponível no contexto /hello e /hello/quarkus
-
 3. Um teste de unidade para HelloResource utilizando REST Assured 
-
 4. Uma página inicial index.html
-
 5. Arquivos Dockerfile para criação de imagens em modo nativo e JVM
-
 6. Arquivo application.properties para configuração das extensões
 
 ### 2. Subir aplicação com Hot Reloading
@@ -63,6 +58,20 @@ https://youtu.be/pBc0qSLaHO8
 
 * Clonar do projeto do meu GIT: **git clone --branch v0.0.2 https://github.com/viniciusfcf/quarkus.git**
 
+O projeto irá conter:
+
+1. Estrutura maven
+2. O recurso novo com.github.viniciusfcf.hibernate.ProdutoResource disponível no contexto /produtos (GET e POST)
+3. A entidade com.github.viniciusfcf.hibernate.Produto
+4. Arquivo application.properties foi atualizado com as configuraçãoes de banco de dados
+
+### 2. Subir aplicação com Hot Reloading
+* ./mvnw compile quarkus:dev -Dquarkus.profile=dev
+
+### 3. Acessar aplicação
+* http://localhost:8080/produtos (GET e POST
+
+
 ### 2. Vídeo do Youtube
 
-https://youtu.be/
+https://youtu.be/aPfLnl710ak
