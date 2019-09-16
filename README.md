@@ -69,7 +69,7 @@ O projeto irá conter:
 * ./mvnw compile quarkus:dev -Dquarkus.profile=dev
 
 ### 3. Acessar aplicação
-* http://localhost:8080/produtos (GET e POST
+* http://localhost:8080/produtos (GET e POST)
 
 
 ### 2. Vídeo do Youtube
