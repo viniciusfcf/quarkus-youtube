@@ -75,3 +75,45 @@ O projeto irá conter:
 ### 2. Vídeo do Youtube
 
 https://youtu.be/geXSv1RMvK4
+
+
+# Terceiro Vídeo: Rastreando seus microsserviços com Jaeger
+## Pré-requisitos
+* JDK 1.8+ com JAVA_HOME configurado
+* Uma IDE (Eclipse ou IntelliJ)
+* Apache Maven 3.5.3+
+* Docker (caso queira criar e executar uma imagem da aplicação)
+* GraalVM (caso queira gerar o executável nativo para Linux)
+* Postgres
+  * docker pull postgres
+  * docker run --network host -e POSTGRES_PASSWORD=postgres -d postgres
+* Jaeger
+  * docker pull jaegertracing/all-in-one
+  * docker run --network host jaegertracing/all-in-one
+
+## Passos
+
+### 1. Como Criar Projeto
+
+* Versão do início do Vídeo
+* [Baixar fonte](https://github.com/viniciusfcf/quarkus/archive/v0.0.2.zip)
+* Clonar do projeto do meu GIT: **git clone --branch v0.0.2 https://github.com/viniciusfcf/quarkus.git**
+
+* Versão final do Vídeo
+* [Baixar fonte](https://github.com/viniciusfcf/quarkus/archive/v0.0.3.zip)
+* Clonar do projeto do meu GIT: **git clone --branch v0.0.3 https://github.com/viniciusfcf/quarkus.git**
+
+
+### 2. Subir aplicação com Hot Reloading
+* ./mvnw compile quarkus:dev
+
+
+### 3. Apresentação
+
+[Baixe aqui](https://docs.google.com/presentation/d/1F-uOYhBRME0AEy57N5c4IR6248j26VZB5zq0RzUCROU/edit?usp=sharing)
+
+### 4. Vídeo do Youtube
+
+https://youtu.be/XXX
+
+
