@@ -96,12 +96,12 @@ https://youtu.be/geXSv1RMvK4
 ### 1. Como Criar Projeto
 
 * Versão do início do Vídeo
-* [Baixar fonte](https://github.com/viniciusfcf/quarkus/archive/v0.0.2.zip)
-* Clonar do projeto do meu GIT: **git clone --branch v0.0.2 https://github.com/viniciusfcf/quarkus.git**
+  * [Baixar fonte](https://github.com/viniciusfcf/quarkus/archive/v0.0.2.zip)
+  * Clonar do projeto do meu GIT: **git clone --branch v0.0.2 https://github.com/viniciusfcf/quarkus.git**
 
 * Versão final do Vídeo
-* [Baixar fonte](https://github.com/viniciusfcf/quarkus/archive/v0.0.3.zip)
-* Clonar do projeto do meu GIT: **git clone --branch v0.0.3 https://github.com/viniciusfcf/quarkus.git**
+  * [Baixar fonte](https://github.com/viniciusfcf/quarkus/archive/v0.0.3.zip)
+  * Clonar do projeto do meu GIT: **git clone --branch v0.0.3 https://github.com/viniciusfcf/quarkus.git**
 
 
 ### 2. Subir aplicação com Hot Reloading
