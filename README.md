@@ -117,3 +117,39 @@ https://youtu.be/geXSv1RMvK4
 https://www.youtube.com/watch?v=_tHkrmheW7k
 
 
+# Quarto Vídeo: Health check
+## Pré-requisitos
+* JDK 1.8+ com JAVA_HOME configurado
+* Uma IDE (Eclipse ou IntelliJ)
+* Apache Maven 3.5.3+
+* Docker (caso queira criar e executar uma imagem da aplicação)
+* GraalVM (caso queira gerar o executável nativo para Linux)
+* Postgres
+  * docker pull postgres
+  * docker run --network host -e POSTGRES_PASSWORD=postgres -d postgres
+
+## Passos
+
+### 1. Como Criar Projeto
+
+* Versão do início do Vídeo
+  * [Baixar fonte](https://github.com/viniciusfcf/quarkus/archive/v0.0.3.zip)
+  * Clonar do projeto do meu GIT: **git clone --branch v0.0.3 https://github.com/viniciusfcf/quarkus.git**
+
+* Versão final do Vídeo
+  * [Baixar fonte](https://github.com/viniciusfcf/quarkus/archive/v0.0.4.zip)
+  * Clonar do projeto do meu GIT: **git clone --branch v0.0.4 https://github.com/viniciusfcf/quarkus.git**
+
+
+### 2. Subir aplicação com Hot Reloading
+* ./mvnw compile quarkus:dev
+
+
+### 3. Apresentação
+
+[Baixe aqui](https://docs.google.com/presentation/d/11OJwisv7boiqVYaLavKJQXlHQqQOkn-GKkOZ6kPcpiw/edit?usp=sharing)
+
+### 4. Vídeo do Youtube
+
+https://youtu.be/OnPffQ1_idQ
+
