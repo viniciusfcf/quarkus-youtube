@@ -153,7 +153,7 @@ https://www.youtube.com/watch?v=_tHkrmheW7k
 
 https://youtu.be/OnPffQ1_idQ
 
-# Quinto Vídeo: Health check
+# Quinto Vídeo: Monitoramento com Prometheus e Grafana
 ## Pré-requisitos
 * JDK 1.8+ com JAVA_HOME configurado
 * Uma IDE (Visual Studio)
