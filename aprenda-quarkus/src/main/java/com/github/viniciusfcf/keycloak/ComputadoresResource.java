@@ -12,14 +12,15 @@ import org.eclipse.microprofile.openapi.annotations.security.OAuthFlow;
 import org.eclipse.microprofile.openapi.annotations.security.OAuthFlows;
 import org.eclipse.microprofile.openapi.annotations.security.SecurityRequirement;
 import org.eclipse.microprofile.openapi.annotations.security.SecurityScheme;
-import org.keycloak.KeycloakSecurityContext;
+
+import io.quarkus.security.identity.SecurityIdentity;
 
 @Path("/computadores")
 @SecurityScheme(securitySchemeName = "quarkus-oauth", type = SecuritySchemeType.OAUTH2, flows = @OAuthFlows(password = @OAuthFlow(tokenUrl = "http://localhost:8180/auth/realms/quarkus/protocol/openid-connect/token")))
 public class ComputadoresResource {
 
     @Inject
-    KeycloakSecurityContext context;
+    SecurityIdentity identity;
 
     @GET
     @Path("publico")
@@ -34,6 +35,6 @@ public class ComputadoresResource {
     @RolesAllowed("user")
     @SecurityRequirement(name = "quarkus-oauth")
     public String protegido() {
-        return "hello protegido "+context.getToken().getPreferredUsername();
+        return "hello protegido "+identity.getPrincipal().getName();
     }
 }

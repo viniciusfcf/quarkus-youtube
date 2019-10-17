@@ -31,7 +31,7 @@ public class MunicipioResource {
 	@Produces(value = MediaType.APPLICATION_JSON)
 	public UnidadeFederativa getUF(@PathParam("idMunicipio") Integer idMunicipio) {
 		Optional<Municipio> municipio = localidadeService.getMunicipios().stream().filter(m -> idMunicipio.equals(m.getId())).findFirst();
-		if(municipio.isEmpty()) {
+		if(!municipio.isPresent()) {
 			throw new NotFoundException();
 		}
 		return localidadeService.getUF(municipio.get().getIdUF());
