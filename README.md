@@ -189,10 +189,6 @@ https://youtu.be/OnPffQ1_idQ
 
 https://youtu.be/OnPffQ1_idQ
 
-# Sexto Vídeo: Segurança com Keycloak
+# A partir do sexto vídeo: Todos os passos estão nos respectivos vídeos no youtube
 
-
-Instruções no vídeo do Youtube
-
-https://youtu.be/kaQxi9Af3-E
-
+https://www.youtube.com/channel/UCJNOHl-pTTTj4S9yq60Ps9A
