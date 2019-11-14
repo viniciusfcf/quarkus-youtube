@@ -6,6 +6,16 @@ public class Pet {
 
     private String name;
 
+    public Pet() {
+        this(null, null);
+    }
+
+    public Pet(Long id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
+    
     public Long getId() {
         return id;
     }
