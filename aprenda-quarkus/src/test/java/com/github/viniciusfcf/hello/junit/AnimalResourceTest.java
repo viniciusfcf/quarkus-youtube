@@ -4,7 +4,6 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.CoreMatchers.hasItems;
 import static org.hamcrest.CoreMatchers.*;
 
-import com.github.viniciusfcf.junit.Animal;
 import com.github.viniciusfcf.junit.AtualizarAnimalDTO;
 
 import org.junit.jupiter.api.Test;
