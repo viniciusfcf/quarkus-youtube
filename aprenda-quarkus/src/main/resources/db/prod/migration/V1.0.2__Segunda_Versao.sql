@@ -31,3 +31,22 @@ CREATE TABLE usuario (
 	nome varchar(255) NULL,
 	CONSTRAINT usuario_pkey PRIMARY KEY (id)
 );
+
+create TABLE autor (
+	id int8 NOT NULL,
+	nome varchar(255) NOT NULL,
+	sobrenomes varchar(255) NOT NULL,
+	CONSTRAINT autor_pkey PRIMARY KEY (id)
+
+);
+
+create TABLE livro (
+	id int8 NOT NULL,
+	titulo varchar(255) NOT NULL,
+	conteudo varchar(1000) NOT NULL,
+	autor int8 NOT NULL,
+	CONSTRAINT livro_pkey PRIMARY KEY (id),
+	FOREIGN KEY (autor) REFERENCES autor(id)
+
+);
+
