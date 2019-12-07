@@ -8,7 +8,6 @@ import javax.inject.Inject;
 import javax.persistence.EntityManager;
 
 import org.apache.commons.lang.StringUtils;
-import org.hibernate.search.mapper.orm.Search;
 
 @ApplicationScoped
 public class ElasticsearchService {
@@ -17,19 +16,19 @@ public class ElasticsearchService {
     EntityManager entityManager;
 
 
-	public void rebuildIndexes() throws InterruptedException {
-        //startAndWait para testes
-        Search.session(entityManager)
-                    .massIndexer()
-                    .startAndWait();
-    }
+	// public void rebuildIndexes() throws InterruptedException {
+    //     //startAndWait para testes
+    //     Search.session(entityManager)
+    //                 .massIndexer()
+    //                 .startAndWait();
+    // }
     
-    public <T> List<T> search(Class<T> clazz, String termo, Optional<Integer> tamanho, String... fields) {
-        return Search.session(entityManager).search(clazz)
-				.predicate(f -> StringUtils.isEmpty(termo)? f.matchAll()
-						: f.simpleQueryString().fields(fields).matching(termo))
-				.fetchHits(tamanho.orElse(20));
-    }
+    // public <T> List<T> search(Class<T> clazz, String termo, Optional<Integer> tamanho, String... fields) {
+    //     return Search.session(entityManager).search(clazz)
+	// 			.predicate(f -> StringUtils.isEmpty(termo)? f.matchAll()
+	// 					: f.simpleQueryString().fields(fields).matching(termo))
+	// 			.fetchHits(tamanho.orElse(20));
+    // }
 
     
 }
