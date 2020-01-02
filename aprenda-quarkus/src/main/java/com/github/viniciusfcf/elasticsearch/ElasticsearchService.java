@@ -1,13 +1,8 @@
 package com.github.viniciusfcf.elasticsearch;
 
-import java.util.List;
-import java.util.Optional;
-
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
-
-import org.apache.commons.lang.StringUtils;
 
 @ApplicationScoped
 public class ElasticsearchService {
