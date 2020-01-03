@@ -5,7 +5,6 @@ import javax.enterprise.event.Observes;
 import javax.inject.Inject;
 
 import org.flywaydb.core.Flyway;
-import org.flywaydb.core.api.MigrationInfo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -22,16 +21,18 @@ public class MigrationService {
     
 
     void onStart(@Observes StartupEvent ev) {    
+        //Desabilitei no video 18...
+        
         LOGGER.info("Inicializando BD com Flyway...");
-        flyway.clean();
-        flyway.migrate();
-        MigrationInfo current = flyway.info().current();
-        if(current != null) {
-            LOGGER.info(current.getVersion().getVersion());
-            LOGGER.info(current.getState().toString());
-        }else {
-            LOGGER.info("SEM VERSÃO DE FLYWAY");
-        }
+        // flyway.clean();
+        // flyway.migrate();
+        // MigrationInfo current = flyway.info().current();
+        // if(current != null) {
+        //     LOGGER.info(current.getVersion().getVersion());
+        //     LOGGER.info(current.getState().toString());
+        // }else {
+        //     LOGGER.info("SEM VERSÃO DE FLYWAY");
+        // }
         
     }
 }

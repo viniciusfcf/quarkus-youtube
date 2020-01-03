@@ -1,10 +1,12 @@
 package com.github.viniciusfcf.junit;
 
 import javax.persistence.Entity;
+import javax.persistence.Table;
 
 import io.quarkus.hibernate.orm.panache.PanacheEntity;
 
 @Entity
+@Table(schema="public")
 public class Animal extends PanacheEntity {
 
     private String nome;

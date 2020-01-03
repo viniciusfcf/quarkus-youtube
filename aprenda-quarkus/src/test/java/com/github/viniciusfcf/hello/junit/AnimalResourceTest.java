@@ -4,18 +4,23 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.CoreMatchers.hasItems;
 import static org.hamcrest.CoreMatchers.*;
 
-import com.github.viniciusfcf.junit.AtualizarAnimalDTO;
-
+import org.junit.jupiter.api.MethodOrderer;
+import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestMethodOrder;
+
+import com.github.viniciusfcf.junit.AtualizarAnimalDTO;
 
 import io.quarkus.test.junit.QuarkusTest;
 import io.restassured.http.ContentType;
 
 @QuarkusTest
+@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class AnimalResourceTest {
 
 
     @Test
+    @Order(1)
     public void testGetAll() {
         given()
         .when().get("/animais")
@@ -26,6 +31,7 @@ public class AnimalResourceTest {
     }
 
     @Test
+    @Order(2)
     public void testPut() {
         AtualizarAnimalDTO dto = new AtualizarAnimalDTO();
         dto.setNome("Jumento");
@@ -42,6 +48,7 @@ public class AnimalResourceTest {
     }
 
     @Test
+    @Order(3)
     public void testGetDadosExternos() {
         given()
         .when().get("/animais/dados-externos")
