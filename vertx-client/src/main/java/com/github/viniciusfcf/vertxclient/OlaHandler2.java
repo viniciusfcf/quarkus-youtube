@@ -10,18 +10,11 @@ import javax.ws.rs.core.MediaType;
 import io.quarkus.vertx.ConsumeEvent;
 
 @ApplicationScoped
-public class HelloResource {
+public class OlaHandler2 {
 
-	@ConsumeEvent(value="greeting2", local=false)
+	@ConsumeEvent(value="olaRequest", local=false)
 	public String consume(String name) {
-		System.out.println("HelloResource.consume()");
-		return name.toUpperCase()+" 2";
+		return name.toUpperCase()+" Quarkus 2!!";
 	}
 	
-	@ConsumeEvent(value="greeting2", local=false)
-	public String consume2(String name) {
-		System.out.println("HelloResource.consume2()");
-		
-		return name.toUpperCase()+" 2";
-	}
 }
