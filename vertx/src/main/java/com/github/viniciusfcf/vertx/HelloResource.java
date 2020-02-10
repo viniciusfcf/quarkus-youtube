@@ -13,13 +13,9 @@ import javax.ws.rs.core.MediaType;
 import io.quarkus.runtime.StartupEvent;
 import io.vertx.axle.core.eventbus.Message;
 import io.vertx.ext.bridge.BridgeEventType;
-import io.vertx.ext.web.handler.BodyHandler;
 import io.vertx.ext.web.handler.ErrorHandler;
 import io.vertx.ext.web.handler.StaticHandler;
 import io.vertx.ext.web.handler.sockjs.BridgeOptions;
-import io.vertx.ext.web.handler.sockjs.PermittedOptions;
-import io.vertx.reactivex.ext.web.Router;
-import io.vertx.reactivex.ext.web.handler.sockjs.SockJSHandler;
 
 @Path("/hello")
 public class HelloResource {
@@ -61,9 +57,7 @@ public class HelloResource {
 	}
 
 	public void onStart2(@Observes io.vertx.ext.web.Router router) {
-
 		router.get("/my-route").handler(rc -> rc.response().end("Hello from my route"));
-
 	}
 
 	public void onStart3(@Observes io.vertx.ext.web.Router router) {

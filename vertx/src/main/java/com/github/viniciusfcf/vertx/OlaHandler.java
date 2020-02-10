@@ -1,12 +1,8 @@
 package com.github.viniciusfcf.vertx;
 
-import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.CompletionStage;
-
 import javax.enterprise.context.ApplicationScoped;
 
 import io.quarkus.vertx.ConsumeEvent;
-import io.vertx.axle.core.eventbus.Message;
 
 @ApplicationScoped
 public class OlaHandler {
