@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Preços</title>
+
+</head>
+<body>
+<div class="container">
+
+    <h2>Último Preço</h2>
+    <div class="row">
+    <p class="col-md-12">O último preço é: <strong><span id="content">Sem Preços</span>&nbsp;</strong>.</p>
+    </div>
+</div>
+</body>
+<script>
+    var source = new EventSource("/precos/stream");
+    console.log('KD?');
+    source.onmessage = function (event) {
+		console.log('Chegou algo ' +event);
+        document.getElementById("content").innerHTML = event.data;
+    };
+</script>
+</html>
