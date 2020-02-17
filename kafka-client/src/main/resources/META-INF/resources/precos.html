@@ -16,9 +16,7 @@
 </body>
 <script>
     var source = new EventSource("/precos/stream");
-    console.log('KD?');
     source.onmessage = function (event) {
-		console.log('Chegou algo ' +event);
         document.getElementById("content").innerHTML = event.data;
     };
 </script>

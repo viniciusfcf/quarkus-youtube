@@ -17,13 +17,14 @@ import io.smallrye.reactive.messaging.annotations.Channel;
 public class PrecoStreamResource {
 
 	@Inject
-    @Channel("preco-gerado-in-memory") Publisher<Double> precos;
+	@Channel("preco-gerado-in-memory")
+	Publisher<Double> precos;
 
-    @GET
-    @Path("/stream")
-    @Produces(MediaType.SERVER_SENT_EVENTS)
-    @SseElementType(MediaType.TEXT_PLAIN)
-    public Publisher<Double> stream() {
-        return precos;
-    }
+	@GET
+	@Path("/stream")
+	@Produces(MediaType.SERVER_SENT_EVENTS)
+	@SseElementType(MediaType.TEXT_PLAIN)
+	public Publisher<Double> stream() {
+		return precos;
+	}
 }
