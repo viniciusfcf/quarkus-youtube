@@ -1,0 +1,15 @@
+- https://debezium.io/documentation/reference/1.0/tutorial.html
+- ./start-debezium.sh
+- http://localhost:8083/
+- http://localhost:8083/connectors
+- curl -i -X POST -H "Accept:application/json" -H  "Content-Type:application/json" http://localhost:8083/connectors/ -d @register-postgres.json
+- docker-compose -f docker-compose-debezium.yaml up
+
+- Criar Incomming de customers
+- Configurar application.properties
+mp.messaging.incoming.customers.connector=smallrye-kafka
+mp.messaging.incoming.customers.topic=dbserver1.inventory.customers
+mp.messaging.incoming.customers.broadcast=true
+mp.messaging.incoming.customers.value.deserializer=org.apache.kafka.common.serialization.StringDeserializer
+
+- Adicionar mvn quarkus:add-extension -Dextensions="vertx"

@@ -12,13 +12,11 @@ public class CustomersIncoming {
 
 	@Inject
 	EventBus bus;
-
+	
 	@Incoming("customers")
-	public String precoAdicionado(String event) {
-		System.out.println("CustomersIncoming: " + event);
-		bus.publish("olaPublish", event);
-		return event;
+	public void handle(String evento) {
+		bus.publish("olaPublish", evento);
+		System.out.println("CustomersIncoming.handle() "+evento);
 	}
-
-
+	
 }
