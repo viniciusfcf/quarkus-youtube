@@ -1,0 +1,9 @@
+PRODUTO:
+  - ID: 1
+    NOME: "Feijao"
+    DESCRICAO: "Feijao carioca"
+    PESO: 1.23
+  - ID: 2
+    NOME: "Ceveja"
+    DESCRICAO: "Skol"
+    PESO: 1

@@ -1,0 +1,5 @@
+PRODUTO:
+  - ID: 1
+    NOME: "Arroz"
+    DESCRICAO: "Descricao legal"
+    PESO: 2
