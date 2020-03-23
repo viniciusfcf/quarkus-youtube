@@ -1,0 +1,7 @@
+- atualizar pom.xml
+- iniciar mongo
+- application.properties
+- Criar entidade com @MongoEntity 
+	extends PanacheMongoEntity
+- Queries
+- Criar PanacheMongoRepository
