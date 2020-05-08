@@ -4,6 +4,9 @@ import java.util.Arrays;
 
 import javax.inject.Inject;
 
+import org.eclipse.microprofile.reactive.messaging.Channel;
+import org.eclipse.microprofile.reactive.messaging.Emitter;
+
 import io.quarkus.runtime.QuarkusApplication;
 import io.quarkus.runtime.annotations.QuarkusMain;
 
@@ -11,14 +14,14 @@ import io.quarkus.runtime.annotations.QuarkusMain;
 public class MeuMain implements QuarkusApplication {
 
     @Inject
-    MeuServico servico;
+    @Channel("nome-canal")
+    Emitter<String> emitter;
 
 	@Override
 	public int run(String... args) throws Exception {
         System.out.println("Iniciando main");
 
-        System.out.println(Arrays.toString(args));
-        servico.facaAlgo();
+        Arrays.stream(args).forEach(emitter::send);
 
 		return 0;
 	}
