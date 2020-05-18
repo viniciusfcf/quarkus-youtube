@@ -1,14 +1,17 @@
 package com.github.viniciusfcf.springweb;
 
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Service;
+import javax.inject.Singleton;
 
-@Service
+import org.eclipse.microprofile.config.inject.ConfigProperty;
+
+// @Service
 //@Component
 //@Repository
+@Singleton
 public class PrefixProducer {
 
-    @Value("${produto.prefix}")
+    // @Value("${produto.prefix}")
+    @ConfigProperty(name="produto.prefix")
     String prefix;
 
     public String getPrefix() {

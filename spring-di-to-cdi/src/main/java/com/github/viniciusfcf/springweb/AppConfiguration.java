@@ -1,12 +1,16 @@
 package com.github.viniciusfcf.springweb;
 
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
+import javax.enterprise.context.ApplicationScoped;
+import javax.inject.Named;
+import javax.ws.rs.Produces;
 
-@Configuration
+// @Configuration
+@ApplicationScoped // @Singleton ou @Dependent
 public class AppConfiguration {
     
-    @Bean(name = "upperCaseFunction")
+    // @Bean(name = "upperCaseFunction")
+    @Produces
+    @Named("upperCaseFunction")
     public StringFunction capitalizer() {
         return String::toUpperCase;
     }

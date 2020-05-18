@@ -73,8 +73,4 @@
     <factorypathentry kind="VARJAR" id="M2_REPO/jakarta/json/bind/jakarta.json.bind-api/1.0.2/jakarta.json.bind-api-1.0.2.jar" enabled="true" runInBatchMode="false"/>
     <factorypathentry kind="VARJAR" id="M2_REPO/org/jboss/resteasy/resteasy-json-p-provider/4.5.3.Final/resteasy-json-p-provider-4.5.3.Final.jar" enabled="true" runInBatchMode="false"/>
     <factorypathentry kind="VARJAR" id="M2_REPO/commons-io/commons-io/2.6/commons-io-2.6.jar" enabled="true" runInBatchMode="false"/>
-    <factorypathentry kind="VARJAR" id="M2_REPO/io/quarkus/quarkus-spring-di/1.4.2.Final/quarkus-spring-di-1.4.2.Final.jar" enabled="true" runInBatchMode="false"/>
-    <factorypathentry kind="VARJAR" id="M2_REPO/io/quarkus/quarkus-spring-core-api/5.2.SP1/quarkus-spring-core-api-5.2.SP1.jar" enabled="true" runInBatchMode="false"/>
-    <factorypathentry kind="VARJAR" id="M2_REPO/io/quarkus/quarkus-spring-context-api/5.2.SP1/quarkus-spring-context-api-5.2.SP1.jar" enabled="true" runInBatchMode="false"/>
-    <factorypathentry kind="VARJAR" id="M2_REPO/io/quarkus/quarkus-spring-beans-api/5.2.SP1/quarkus-spring-beans-api-5.2.SP1.jar" enabled="true" runInBatchMode="false"/>
 </factorypath>

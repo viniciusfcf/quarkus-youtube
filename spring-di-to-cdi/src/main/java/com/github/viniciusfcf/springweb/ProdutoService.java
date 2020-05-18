@@ -1,27 +1,34 @@
 package com.github.viniciusfcf.springweb;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Component;
+import javax.inject.Inject;
+import javax.inject.Named;
+import javax.inject.Singleton;
 
-@Component
+import org.eclipse.microprofile.config.inject.ConfigProperty;
+
+// @Component
 //@Service
 //@Repository
 //@Scope Singleton, prototype, request, session
+@Singleton
 public class ProdutoService {
     
     private final PrefixProducer messageProducer;
 
-    @Autowired
-    @Qualifier("noopFunction")
+    // @Autowired
+    // @Qualifier("noopFunction")
+    @Inject
+    @Named("noopFunction")
     StringFunction noopStringFunction;
 
-    @Autowired
-    @Qualifier("upperCaseFunction")
+    // @Autowired
+    // @Qualifier("upperCaseFunction")
+    @Inject
+    @Named("upperCaseFunction")
     StringFunction capitalizerStringFunction;
 
-    @Value("${produto.suffix}")
+    // @Value("${produto.suffix}")
+    @ConfigProperty(name="produto.suffix")
     String suffix;
 
     public ProdutoService(PrefixProducer messageProducer) {

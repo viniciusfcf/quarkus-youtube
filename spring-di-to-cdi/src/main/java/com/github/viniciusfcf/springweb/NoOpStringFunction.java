@@ -1,8 +1,11 @@
 package com.github.viniciusfcf.springweb;
 
-import org.springframework.stereotype.Component;
+import javax.inject.Named;
+import javax.inject.Singleton;
 
-@Component("noopFunction")
+// @Component("noopFunction")
+@Singleton
+@Named("noopFunction")
 public class NoOpStringFunction implements StringFunction {
 
     @Override
