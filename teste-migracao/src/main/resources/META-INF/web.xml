@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<web-app>
+
+  <servlet>
+    <servlet-name>controlServlet</servlet-name>
+    <servlet-class>com.github.viniciusfcf.migracoes.MeuServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>controlServlet</servlet-name>
+    <url-pattern>/servlet</url-pattern>
+  </servlet-mapping>
+</web-app> 
