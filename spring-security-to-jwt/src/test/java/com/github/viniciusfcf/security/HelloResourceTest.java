@@ -95,6 +95,12 @@ public class HelloResourceTest {
           .then()
              .statusCode(200)
              .body(is("hello"));
+
+        //so pode anonimo...
+        givenAutenticado()
+             .when().get("/hello/pre5")
+             .then()
+                .statusCode(403);
     }
 
     @Test
@@ -122,6 +128,12 @@ public class HelloResourceTest {
           .then()
              .statusCode(200)
              .body(is("hello"));
+
+        givenAutenticado()
+             .with().pathParam("username", "nome errado")
+             .when().get("/hello/pre7/{username}")
+             .then()
+                .statusCode(403);
     }
 
 }
