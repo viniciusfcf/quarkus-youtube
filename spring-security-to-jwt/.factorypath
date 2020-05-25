@@ -52,14 +52,6 @@
     <factorypathentry kind="VARJAR" id="M2_REPO/org/jboss/slf4j/slf4j-jboss-logging/1.2.0.Final/slf4j-jboss-logging-1.2.0.Final.jar" enabled="true" runInBatchMode="false"/>
     <factorypathentry kind="VARJAR" id="M2_REPO/org/graalvm/sdk/graal-sdk/19.3.1/graal-sdk-19.3.1.jar" enabled="true" runInBatchMode="false"/>
     <factorypathentry kind="VARJAR" id="M2_REPO/org/wildfly/common/wildfly-common/1.5.4.Final-format-001/wildfly-common-1.5.4.Final-format-001.jar" enabled="true" runInBatchMode="false"/>
-    <factorypathentry kind="VARJAR" id="M2_REPO/io/quarkus/quarkus-spring-security/1.4.2.Final/quarkus-spring-security-1.4.2.Final.jar" enabled="true" runInBatchMode="false"/>
-    <factorypathentry kind="VARJAR" id="M2_REPO/io/quarkus/quarkus-security/1.4.2.Final/quarkus-security-1.4.2.Final.jar" enabled="true" runInBatchMode="false"/>
-    <factorypathentry kind="VARJAR" id="M2_REPO/jakarta/interceptor/jakarta.interceptor-api/1.2.5/jakarta.interceptor-api-1.2.5.jar" enabled="true" runInBatchMode="false"/>
-    <factorypathentry kind="VARJAR" id="M2_REPO/io/quarkus/quarkus-spring-security-core-api/5.2.Final/quarkus-spring-security-core-api-5.2.Final.jar" enabled="true" runInBatchMode="false"/>
-    <factorypathentry kind="VARJAR" id="M2_REPO/io/quarkus/quarkus-spring-core-api/5.2.SP1/quarkus-spring-core-api-5.2.SP1.jar" enabled="true" runInBatchMode="false"/>
-    <factorypathentry kind="VARJAR" id="M2_REPO/io/quarkus/quarkus-spring-context-api/5.2.SP1/quarkus-spring-context-api-5.2.SP1.jar" enabled="true" runInBatchMode="false"/>
-    <factorypathentry kind="VARJAR" id="M2_REPO/io/quarkus/quarkus-spring-web-api/5.2.SP1/quarkus-spring-web-api-5.2.SP1.jar" enabled="true" runInBatchMode="false"/>
-    <factorypathentry kind="VARJAR" id="M2_REPO/io/quarkus/quarkus-spring-beans-api/5.2.SP1/quarkus-spring-beans-api-5.2.SP1.jar" enabled="true" runInBatchMode="false"/>
     <factorypathentry kind="VARJAR" id="M2_REPO/io/quarkus/quarkus-smallrye-jwt/1.4.2.Final/quarkus-smallrye-jwt-1.4.2.Final.jar" enabled="true" runInBatchMode="false"/>
     <factorypathentry kind="VARJAR" id="M2_REPO/io/smallrye/smallrye-jwt/2.1.1/smallrye-jwt-2.1.1.jar" enabled="true" runInBatchMode="false"/>
     <factorypathentry kind="VARJAR" id="M2_REPO/org/eclipse/microprofile/config/microprofile-config-api/1.4/microprofile-config-api-1.4.jar" enabled="true" runInBatchMode="false"/>
@@ -93,6 +85,8 @@
     <factorypathentry kind="VARJAR" id="M2_REPO/io/smallrye/reactive/smallrye-mutiny-vertx-core/0.0.13/smallrye-mutiny-vertx-core-0.0.13.jar" enabled="true" runInBatchMode="false"/>
     <factorypathentry kind="VARJAR" id="M2_REPO/io/smallrye/reactive/smallrye-mutiny-vertx-runtime/0.0.13/smallrye-mutiny-vertx-runtime-0.0.13.jar" enabled="true" runInBatchMode="false"/>
     <factorypathentry kind="VARJAR" id="M2_REPO/io/smallrye/reactive/vertx-mutiny-generator/0.0.13/vertx-mutiny-generator-0.0.13.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/io/quarkus/quarkus-security/1.4.2.Final/quarkus-security-1.4.2.Final.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/jakarta/interceptor/jakarta.interceptor-api/1.2.5/jakarta.interceptor-api-1.2.5.jar" enabled="true" runInBatchMode="false"/>
     <factorypathentry kind="VARJAR" id="M2_REPO/io/quarkus/quarkus-jsonp/1.4.2.Final/quarkus-jsonp-1.4.2.Final.jar" enabled="true" runInBatchMode="false"/>
     <factorypathentry kind="VARJAR" id="M2_REPO/org/glassfish/jakarta.json/1.1.6/jakarta.json-1.1.6.jar" enabled="true" runInBatchMode="false"/>
     <factorypathentry kind="VARJAR" id="M2_REPO/jakarta/servlet/jakarta.servlet-api/4.0.3/jakarta.servlet-api-4.0.3.jar" enabled="true" runInBatchMode="false"/>
