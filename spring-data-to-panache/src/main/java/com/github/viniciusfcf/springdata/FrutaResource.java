@@ -87,8 +87,7 @@ public class FrutaResource {
     @Path("paginado")
     public List<Fruta> findOrderByNome(@QueryParam Integer page, @QueryParam Integer size) {
 		Pageable pageable = PageRequest.of(page, size);
-        Slice<Fruta> resultadoConsulta = frutaRepository.orderByNome(pageable);
-        return resultadoConsulta.getContent();
+        return frutaRepository.orderByNome(pageable);
     }
 
 
