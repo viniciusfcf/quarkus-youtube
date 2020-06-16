@@ -18,22 +18,22 @@ public class MeuServicoDemorado {
     "key", "keyGenerator", "cacheManager", "cacheResolver", "condition", "unless", "sync", "beforeInvocation"
 */
 
-    @Cacheable(value = "nome-do-primeiro-cache")
+    @Cacheable(value = "nome-do-cache")
     public String primeiroCacheavel(String id, Object entidade) {
         demore();
         return "Primeiro Método Cacheavel "+inteiro.getAndIncrement()+", ID: "+id;
     }
     
-    @CacheEvict(value = "nome-do-primeiro-cache", allEntries = true)
+    @CacheEvict(value = "nome-do-cache", allEntries = true)
     public void limpePrimeiroCacheTodo() {
     }
 
-    @CacheEvict(value = "nome-do-primeiro-cache")
+    @CacheEvict(value = "nome-do-cache")
     public void limpePrimeiroCache(String id, Object entidade) {
     }
 
 
-    @CachePut(value = "nome-do-primeiro-cache")
+    @CachePut(value = "nome-do-cache")
     public String segundoCacheavel(String id, Object entidade) {
         demore();
         return "Segundo Cacheavel "+inteiro.getAndIncrement()+", ID: "+id;

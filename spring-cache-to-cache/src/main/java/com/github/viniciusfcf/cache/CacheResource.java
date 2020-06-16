@@ -10,7 +10,7 @@ import javax.ws.rs.core.MediaType;
 
 
 @Path("/cache")
-public class HelloResource {
+public class CacheResource {
 
     private static final Object OBJ = new Object();
     
@@ -19,35 +19,35 @@ public class HelloResource {
 
 
     @GET
-    @Path("primeiro/{id}")
+    @Path("{id}")
     @Produces(MediaType.TEXT_PLAIN)
     public String primeiro(@PathParam("id") String id) {
         return servico.primeiroCacheavel(id, new Object());
     }
 
     @GET
-    @Path("primeiro-mesmo-objeto/{id}")
+    @Path("mesmo-objeto/{id}")
     @Produces(MediaType.TEXT_PLAIN)
     public String segundo(@PathParam("id") String id) {
         return servico.primeiroCacheavel(id, OBJ);
     }
 
     @DELETE
-    @Path("primeiro-todo")
+    @Path("tudo")
     @Produces(MediaType.TEXT_PLAIN)
     public void limpeTudo() {
         servico.limpePrimeiroCacheTodo();
     }
 
     @DELETE
-    @Path("primeiro/{id}")
+    @Path("{id}")
     @Produces(MediaType.TEXT_PLAIN)
     public void limpeUm(@PathParam("id") String id) {
         servico.limpePrimeiroCache(id, OBJ);
     }
 
     @GET
-    @Path("put-primeiro-mesmo-objeto/{id}")
+    @Path("put-mesmo-objeto/{id}")
     @Produces(MediaType.TEXT_PLAIN)
     public String segundoCache(@PathParam("id") String id) {
         return servico.segundoCacheavel(id, OBJ);
