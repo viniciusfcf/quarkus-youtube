@@ -1,0 +1,26 @@
+//https://developers.google.com/protocol-buffers/docs/proto3
+
+//syntax
+//option
+//service
+//message
+
+syntax = "proto3";
+
+option java_multiple_files=true;
+option java_package="com.github.viniciusfcf.proto.service";
+
+service UsuarioService {
+    rpc AdicionarUsuario (UsuarioRequest) returns (UsuarioResponse);
+}
+
+message UsuarioRequest {
+    string nome = 1;
+    int32 idade = 2;
+}
+
+message UsuarioResponse {
+    int32 id = 1;
+    string nome = 2;
+    int32 idade = 3;
+}
